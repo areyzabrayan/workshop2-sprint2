@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Technology from './components/pages/technology/technology'
 
 
 
@@ -7,8 +8,7 @@ function App() {
 
   return (
     <>
-    <h1>Hola</h1>
-    <h2>new branch</h2>
+    <Technology/>
     </>
   )
 }
