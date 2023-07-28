@@ -183,8 +183,8 @@
 
             &__titles {
                 display: flex;
-                flex-direction: column; 
-                align-items: center;
+                flex-direction: row; 
+                justify-content: center;
             }
 
             &__roles {
