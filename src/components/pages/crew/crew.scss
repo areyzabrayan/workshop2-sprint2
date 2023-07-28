@@ -5,18 +5,18 @@
 }
 
 .containerC {
-
+    display: flex;
+    flex-direction: row;
     padding-top: 56px;
     background-image: url('../../../assets/crew/background-crew-desktop.jpg');
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: 100vh;
     z-index: 0;
     padding-left: 5%;
     padding-right: 5%;
+
 
     .Loading {
         & h1 {
@@ -182,6 +182,7 @@
     .containerC {
         flex-direction: column;
         align-items: center;
+
         .containerC__left {
             display: flex;
             flex-direction: column;
@@ -245,6 +246,7 @@
 
             &__image {
                 max-width: 456px;
+
                 & img {
                     max-width: 456px;
                     width: 100%;
@@ -263,12 +265,17 @@
 
 @media (max-width: 375px) {
     .containerC {
-       
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        flex-direction: column-reverse;
+
+
         .containerC__left {
-           
+            height: 100%;
 
             &__titles {
-              
+
 
                 & h4 {
                     font-size: 20px;
@@ -280,13 +287,16 @@
             }
 
             &__content {
-               
+                flex-direction: column-reverse;
+                justify-content: flex-start;
+
+
 
                 &__info {
-                   
+
 
                     &__roles {
-                       
+
 
                         & h3 {
                             font-size: 25px;
@@ -298,29 +308,34 @@
 
                     }
 
-                    
+
                 }
 
                 &__buttons {
-                  
+
                     flex-wrap: wrap;
-            
+
                 }
 
             }
         }
 
         .containerC__right {
-            
+            margin-top: 0rem;
+
 
             &__image {
+
                 max-width: 327px;
+
                 & img {
                     max-width: 327px;
                     width: 100%;
                 }
             }
         }
+
+
     }
 
 }
