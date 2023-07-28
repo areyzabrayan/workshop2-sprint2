@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './technology.scss'
 import imageLaunchVehiclePortrait from '../../../assets/technology/image-launch-vehicle-portrait.jpg';
 import imageSpaceportPortrait from '../../../assets/technology/image-spaceport-portrait.jpg';
 import imageSpaceCapsulePortrait from '../../../assets/technology/image-space-capsule-portrait.jpg';
+import { useParams } from 'react-router-dom';
+
 
 const Technology = () => {
   const infoTech= [
@@ -31,12 +33,18 @@ const Technology = () => {
       "description": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
     }
   ]
+
   const [currentTech, setCurrentTech] = useState(infoTech[0]); 
 
   const handleButtonClick = (index) => {
     setCurrentTech(infoTech[index]);
   };
+  useEffect(()=>{
 
+   const {id} = useParams();
+  console.log(id);
+  //  setCurrentTech(infoTech[id])
+  },[])
   return (
     <div className="containerT">
       <div className="containerT__titles">
