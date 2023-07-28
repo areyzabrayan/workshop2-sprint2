@@ -3,6 +3,8 @@ import './technology.scss'
 import imageLaunchVehiclePortrait from '../../../assets/technology/image-launch-vehicle-portrait.jpg';
 import imageSpaceportPortrait from '../../../assets/technology/image-spaceport-portrait.jpg';
 import imageSpaceCapsulePortrait from '../../../assets/technology/image-space-capsule-portrait.jpg';
+import {  useParams } from "react-router-dom";
+
 
 const Technology = () => {
   const infoTech= [
@@ -63,5 +65,6 @@ const Technology = () => {
     </div>
   );
 };
+
 
 export default Technology;
