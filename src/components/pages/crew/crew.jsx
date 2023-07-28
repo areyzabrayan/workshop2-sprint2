@@ -96,38 +96,45 @@ const Crew = () => {
         crewInfo != undefined ? (
           <div className="containerC">
 
+
             <div className='containerC__left'>
               <div className='containerC__left__titles'>
                 <h4>02</h4>
                 <h2>MEET THE CREW</h2>
               </div>
-              <div className='containerC__left__roles'>
-                <h3>{crewInfo.role}</h3>
-                <h2>{crewInfo.name}</h2>
+              <div className='containerC__left__content'>
+                <div className='containerC__left__content__info'>
+                  <div className='containerC__left__content__info__roles'>
+                    <h3>{crewInfo.role}</h3>
+                    <h2>{crewInfo.name}</h2>
+                  </div>
+                  <div className='containerC__left__content__info__bio'>
+                    <p>{crewInfo.bio}</p>
+                  </div>
+                </div>
+                <div className='containerC__left__content__buttons'>
+
+
+                  {buttons.map((button, index) => (
+
+
+                    <button key={button.id}
+                      onClick={() => handleButtonClick(button.id)}
+
+                      style={{
+                        backgroundColor: index === indexParameter ? '#FFFFFF' : '#363841'
+
+                      }}
+                    >
+
+                    </button>
+
+                  ))}
+
+                </div>
               </div>
-              <div className='containerC__left__bio'>
-                <p>{crewInfo.bio}</p>
-              </div>
-              <div className='containerC__left__buttons'>
 
 
-                {buttons.map((button, index) => (
-
-
-                  <button key={button.id}
-                    onClick={() => handleButtonClick(button.id)}
-
-                    style={{
-                      backgroundColor: index === indexParameter ? '#FFFFFF' : '#363841'
-
-                    }}
-                  >
-
-                  </button>
-
-                ))}
-
-              </div>
 
             </div>
             <div className='containerC__right'>
