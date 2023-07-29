@@ -38,6 +38,10 @@ letter-spacing: 4.725px;
     align-items: center;
     gap: 30px;
   }
+  &__info{
+    display: flex;
+    gap: 50px;
+  }
   &__buttons{
     display: flex;
     flex-direction: column;
@@ -91,3 +95,32 @@ line-height: 32px;
     }
 }
 }
+
+
+
+
+  
+  @media (max-width: 767px) {
+    .containerT {
+      padding-left: 0;
+      &__main{
+        flex-direction: column;
+        flex-flow:wrap-reverse;
+      }
+      &__info{
+        flex-direction: column;
+        padding-left: 30%;
+      }
+      &__buttons{
+        flex-direction: row;
+      }
+      & h4 {
+        padding-bottom: 20px;
+      }
+      & h2{
+        padding-bottom: 20px;
+      }
+    }
+  }
+    
+
