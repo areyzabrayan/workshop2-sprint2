@@ -166,6 +166,8 @@ const Technology = () => {
   );
 };
 
+//update now
+
 export default Technology;
 
 
