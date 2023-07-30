@@ -1,0 +1,30 @@
+.NavBar {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 1;
+  width: 830px;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+  display: flex;
+  align-items: center;
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 100px;
+    span {
+      .a {
+        color: #e31e1e;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+      }
+    }
+  }
+}
