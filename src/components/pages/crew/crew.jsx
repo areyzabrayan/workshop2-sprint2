@@ -94,9 +94,8 @@ const Crew = () => {
     <>
       {
         crewInfo != undefined ? (
+          <div className="container">
           <div className="containerC">
-
-
             <div className='containerC__left'>
               <div className='containerC__left__titles'>
                 <h4>02</h4>
@@ -147,10 +146,14 @@ const Crew = () => {
               </div>
             </div>
           </div>
-        ) : <div className="containerC">
+          </div>
+        ) :  <div className="container">
+        <div className="containerC">
 
           <div className='Loading'><h1>Loading</h1></div>
         </div>
+        </div>
+
       }
     </>
 
@@ -158,4 +161,4 @@ const Crew = () => {
 
 }
 
-export default Crew
+export default Crew//
