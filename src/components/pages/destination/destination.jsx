@@ -29,7 +29,7 @@ const Destination = () => {
           </div>
           <h1 className="details__title">{info.name}</h1>
           <p className="details__description">{info.description}</p>
-          <div className="details__fogit puoter">
+          <div className="details__fogit details__footer">
             <section>
               <span>avg. distance</span>
               <h3>{info.distance}</h3>
