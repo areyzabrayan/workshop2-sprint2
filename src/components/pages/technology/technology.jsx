@@ -38,8 +38,11 @@ const Technology = () => {
   const [currentTech, setCurrentTech] = useState(infoTech[0]);
   const [isTable, setIsTable] = useState(false);
 
+  const [selectedTechIndex, setSelectedTechIndex] = useState(0);
+
   const handleButtonClick = (index) => {
     setCurrentTech(infoTech[index]);
+    setSelectedTechIndex(index);
   };
 
   useEffect(() => {
@@ -68,7 +71,7 @@ const Technology = () => {
       <div className='containerT__info'>
         <div className="containerT__buttons">
           {infoTech.map((tech, index) => (
-            <button key={index} onClick={() => handleButtonClick(index)}>
+            <button key={index} onClick={() => handleButtonClick(index)}className={selectedTechIndex === index ? 'selected' : ''}>
               {index + 1}
             </button>
           ))}
